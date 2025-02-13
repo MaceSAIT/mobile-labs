@@ -7,11 +7,10 @@ export default function TabLayout() {
 
     <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
       <Tabs.Screen
-        name="home"
+        name="index"
         options={{
           title: 'Home',
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
-          href: null,
         }}
       />
       <Tabs.Screen
@@ -31,32 +30,17 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Login',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
-          tabBarStyle: {display: 'none'}, // Hide the nav bar when in the login screen
-          href: null,
-        }}
-      />
-      <Tabs.Screen
         name="yyc"
         options={{
           title: 'Calgary',
           tabBarIcon: ({ color }) => <FontAwesome6 size={28} name="mountain-city" color={color} />,
+          href: null,
         }}
       />
       <Tabs.Screen
         name="yeg"
         options={{
           title: 'Edmonton',
-          tabBarIcon: ({ color }) => <FontAwesome6 size={28} name="tree-city" color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="welcome"
-        options={{
-          title: 'Welcome',
           tabBarIcon: ({ color }) => <FontAwesome6 size={28} name="tree-city" color={color} />,
           href: null,
         }}
